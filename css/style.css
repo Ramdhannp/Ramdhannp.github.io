@@ -1,0 +1,365 @@
+:root {
+    --mainColor: #fff;
+    --secondaryColor: #F1F1F1;
+    --acsentColor: #6093C5;
+    --blackColor: #333646;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900%;
+    color: var(--blackColor);
+    font-family: 'ubuntu', sans-serif;
+}
+
+section h1 {
+    font-size: 2.5rem;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+nav {
+    color: var(--blackColor);
+    background-color: #fff;
+}
+
+.nav-link.active {
+    color: var(--acsentColor) !important;
+    font-weight: 700;
+}
+
+nav a.nav-link {
+    color: var(--blackColor);
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav a.nav-link:hover {
+    color: var(--acsentColor);
+}
+
+.nav-white {
+    box-shadow: 1px 0 7px rgba(0, 0, 0, .3);
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-nav {
+    width: 60%;
+}
+
+/* End Navbar */
+
+/* Hero */
+
+
+
+.color-acsent {
+    color: var(--acsentColor);
+}
+
+#hero {
+    color: var(--blackColor);
+    min-height: 100vh;
+    margin-top: 75px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 400;
+}
+
+#hero p {
+    font-weight: 300;
+}
+
+
+/* CTA */
+.btn-custom1 {
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: white;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(105, 136, 240, .8);
+    color: white;
+}
+
+.change-my-color {
+    fill: var(--blackColor);
+}
+
+.change-my-color2 {
+    color: var(--blackColor);
+}
+
+.social-icon svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+.social-icon-footer svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+
+.social-icon svg path:hover,
+.social-icon-footer svg path:hover {
+    fill: var(--acsentColor);
+
+}
+
+/* End Hero */
+
+/* About */
+
+hr {
+    width: 30%;
+    height: 10px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+
+/* End Abaout */
+
+
+/* Skill */
+
+#skill {
+    min-height: 600px;
+    width: 100%;
+}
+
+#skill .photo img {
+    width: 13%;
+    margin: 15px;
+    transition: all .2s linear;
+}
+
+#skill .photo img:hover {
+    transform: scale(1.02) translateY(-10px);
+    transition: all .2s ease-in-out;
+}
+
+#skill .photo img:nth-child(1) {
+    width: 11%;
+}
+
+#skill .skill-konten {
+    margin-top: 120px;
+}
+
+#skill .card {
+    background-color: #e7e5e5;
+    height: 390px;
+    width: 290px;
+    padding-top: 27px !important;
+    transition: all .4s linear;
+}
+
+#skill .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: all .2s ease-in-out;
+}
+
+#skill .card .row {
+    padding: 10px;
+    margin-top: 2px;
+}
+
+#skill .card.active {
+    background-color: var(--acsentColor);
+}
+
+#skill .card p {
+    font-size: .9em;
+}
+
+#skill .card h2 {
+    font-size: 2.3em;
+}
+
+#skill .card img {
+    width: 120px;
+}
+
+/* End Skill */
+
+/* serifikat */
+
+#sertifikat {
+    margin-top: -170px;
+    padding-top: 270px;
+    padding-bottom: 80px;
+    background-color: var(--secondaryColor);
+}
+
+#sertifikat p,
+a {
+    color: var(--blackColor);
+    text-decoration: none;
+}
+
+#sertifikat img {
+    width: 49%;
+    padding: 5px;
+    transition: all .4s linear;
+}
+
+#sertifikat img:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: all .2s ease-in-out;
+}
+
+/* End Sertifikat */
+
+
+/* Gallery Portofolio */
+
+#portofolio {
+    padding: 80px 10px;
+}
+
+.hovereffects {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    border: 3px solid var(--blackColor);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+    position: relative;
+    text-align: center;
+    cursor: default;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hovereffects img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hovereffects .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, .5);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.hovereffects img {
+    display: block;
+    position: relative;
+    transition: all .4s linear;
+    -webkit-transition: all .4s linear;
+}
+
+.hovereffects h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background: rgba(0, 0, 0, .6);
+    transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.hovereffects a.info {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    max-width: 50px 0;
+    border-style: 0 0 5px #fff;
+    margin: 50px 0 0;
+    padding: 7px 14px;
+
+}
+
+.hovereffects:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.hovereffects:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.hovereffects:hover h2,
+.hovereffects:hover a.info {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.hovereffects:hover a.info {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+
+}
+
+/* End Gallery Portofolio */
+
+/* Footer */
+
+footer img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+/* End Footer */
