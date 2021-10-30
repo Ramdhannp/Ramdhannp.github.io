@@ -10,10 +10,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/nav.css">
 
     <!-- My Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,16 +29,20 @@
 <body>
 
     <!-- Navbar -->
-    <div class="container">
-        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="nav">
+    <!-- <div class="container">
+        <nav>
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <h3 class="fw-bold">Ramdhan.</h3>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-toggle">
+                        <input type="checkbox">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav justify-content-between text-uppercase">
@@ -46,7 +54,30 @@
                 </div>
             </div>
         </nav>
+    </div> -->
+
+    <div class="container">
+        <nav>
+            <a class="navbar-brand" href="#">
+                <h3 class="fw-bold">Ramdhan.</h3>
+            </a>
+
+            <ul>
+                <li><a class="nav-link active" aria-current="page" href="#about">Home</a></li>
+                <li><a class="nav-link" href="#portofolio">Portofolio</a></li>
+                <li><a class="nav-link blog" onclick="runPopup()" href="">Blog</a></li>
+                <li><a class="nav-link" href="#footer">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </div>
+
 
 
     <!-- End Navbar -->
@@ -58,7 +89,7 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6 col-md-6 order-1  mt-3 my-sm-auto text-center text-lg-start text-md-start">
-                    <h2>Hallo</h2>
+                    <h2><span id="typed-strings"></span></h2>
                     <h1 class="fw-bold">I Am <span class="color-acsent">Ramdhan N P</span></h1>
                     <p>Graphic Designer | UI UX Designer | Web Develover<br>
                         3 Years Experienced <span class="fw-bold color-acsent">Shopkeeper in Photo Print Shop</span></p>
@@ -504,6 +535,7 @@
     <!-- My Script -->
 
     <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -516,6 +548,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    </script>
+
 </body>
 
 </html>
