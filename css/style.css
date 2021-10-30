@@ -29,38 +29,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navbar */
-
-nav {
-    color: var(--blackColor);
-    background-color: #fff;
-}
-
-.nav-link.active {
-    color: var(--acsentColor) !important;
-    font-weight: 700;
-}
-
-nav a.nav-link {
-    color: var(--blackColor);
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav a.nav-link:hover {
-    color: var(--acsentColor);
-}
-
-.nav-white {
-    box-shadow: 1px 0 7px rgba(0, 0, 0, .3);
-    transition: all 0.2s ease-in-out;
-}
-
-.navbar-nav {
-    width: 60%;
-}
-
-/* End Navbar */
 
 /* Hero */
 
@@ -87,7 +55,6 @@ nav a.nav-link:hover {
 #hero p {
     font-weight: 300;
 }
-
 
 /* CTA */
 .btn-custom1 {
